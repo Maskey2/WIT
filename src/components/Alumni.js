@@ -7,7 +7,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Alum from '../assets/Alumni.jpg'
 import { Grid } from '@material-ui/core';
-
+import '../App.css';
 export default function Alumni() {
 
 
@@ -24,8 +24,8 @@ export default function Alumni() {
                         <Typography variant="h5" align="center" color="textSecondary" paragraph>
                             We are always exited to hear from ex students and we would love to hear from you!
                         </Typography>
-                            <img src={Alum} style={{ height: 'auto', width: '100%' }} />
-                        
+                        <img src={Alum} style={{ height: 'auto', width: '100%' }} />
+
                     </Container>
                 </div>
             </main>

@@ -9,7 +9,7 @@ import {
     Link
 } from "react-router-dom";
 import logo from '../assets/logo.png'
-
+import '../App.css';
 const styleSheet = {
     list: {
         width: 200,
@@ -98,7 +98,7 @@ class ResAppBar extends Component {
                             <MenuIcon
                                 className={this.props.classes.sideBarIcon}
                                 onClick={() => { this.setState({ drawer: true }) }} />
-                SD
+                WIT
             </Grid>
                     </Toolbar>
                 </AppBar>

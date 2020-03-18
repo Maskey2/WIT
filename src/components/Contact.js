@@ -8,7 +8,7 @@ import Footer from './Footer';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import EmailIcon from '@material-ui/icons/Email';
 import Grid from '@material-ui/core/Grid';
-
+import '../App.css';
 const useStyles = makeStyles(theme => ({
     link: {
         textDecoration: 'none',

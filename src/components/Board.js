@@ -13,7 +13,7 @@ import Link from '@material-ui/core/Link';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import contents from './BoardContent'
-
+import '../App.css';
 const useStyles = makeStyles(theme => ({
     '@global': {
         ul: {

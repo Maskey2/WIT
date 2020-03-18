@@ -9,11 +9,10 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Link from '@material-ui/core/Link';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Sneha from '../assets/Sneha.jpg';
-
+import '../App.css';
 const useStyles = makeStyles(theme => ({
     cardGrid: {
         paddingTop: theme.spacing(8),
@@ -43,32 +42,27 @@ const useStyles = makeStyles(theme => ({
 
 }));
 
-
-
-
 export default function Album() {
     const classes = useStyles();
-
     return (
         <React.Fragment>
             <CssBaseline />
             <Navbar />
             <main>
-
                 <div>
-                    <Container maxWidth="md">
+                    <Container maxWidth="lg">
                         <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
                             Discussion Women in Technology
                      </Typography>
                         <Typography variant="h5" align="center" color="textSecondary" paragraph>
                             #1 Let's hear what our ex-president of Women in Technnology at Southeastern Ms Sneha Sharma has to say about WIT and Southeastern!
                     </Typography>
-                        <Typography align="center">Ms Sharma is currently working as a Risk Manager at Coface North America Insurance Company in New York. She graduated from SELU with Mathematics major in 2015.</Typography>
                     </Container>
                 </div>
 
                 <Container className={classes.cardGrid} maxWidth="md">
                     <Grid container spacing={0}>
+                        <Typography align="center" style={{ padding: '15px', fontSize: '22px' }}>Ms Sharma is currently working as a Risk Manager at Coface North America Insurance Company in New York. She graduated from SELU with Mathematics major in 2015.</Typography>
                         <Grid xs={12} sm={6} md={4}>
                             <img src={Sneha} className={classes.card} alt="QnA" />
                         </Grid>

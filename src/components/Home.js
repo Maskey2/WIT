@@ -13,13 +13,13 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import '../App.css';
+import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
-    paper: {
-        padding: '30px',
-        backgroundColor: '#fbfbfb',
-
-    },
+   link: {
+            textDecoration: 'none',
+            color: 'black',
+        },
     quote: {
         padding: '30px',
         margin: '40px',
@@ -55,7 +55,7 @@ function Home() {
             <Container maxWidth="lg">
                 <Grid container spacing={3}>
                     <Grid item xs={6}>
-                        <Paper className={classes.paper}>
+                        <Typography className={classes.paper}>
                             <div>
                                 <li>
                                     Women in Technology is founded by Kristen Reeves and Sara Moore in
@@ -79,22 +79,24 @@ function Home() {
                                     cream with liquid Nitrogen, etc.
                          </li>
                             </div>
-                        </Paper>
+                        </Typography>
                     </Grid>
                     <Grid item xs={6}>
-                        <Paper className={classes.paper}>
+                        <Typography className={classes.paper}>
                             <div>
-                                <LocationOnIcon className={classes.icon} />
-                                <h4>Location</h4>
+                            <a href="https://www.google.com/maps/dir/30.5135616,-90.4790016/selu+location/@30.5163838,-90.4783979,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x862722985b04e61d:0xd65f00282c35660!2m2!1d-90.4688572!2d30.5173159" className={classes.link}>
+                                <LocationOnIcon className={classes.icon} style={{ fontSize: '40px' }} />
+                                            </a>
                                 <p>Southeastern Louisiana University,</p>
                                 <p>500 W University Ave, Hammond, LA 70402</p>
                             </div>
                             <div>
-                                <EmailIcon className={classes.icon} />
-                                <h4>Email</h4>
+                            <a href="mailto:slu_wit@southeastern.edu" className={classes.link}>
+                                <EmailIcon className={classes.icon} style={{ fontSize: '40px' }} />
+                                            </a>
                             </div>
                             <p> slu_wit@southeastern.edu</p>
-                        </Paper>
+                        </Typography>
                     </Grid>
 
                     <div>

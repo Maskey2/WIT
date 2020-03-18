@@ -17,7 +17,7 @@ import p1 from '../assets/Gallery/Saugat.jpg';
 import p2 from '../assets/Gallery/avash.jpg';
 import p3 from '../assets/Gallery/Bibesh.png';
 import p4 from '../assets/Gallery/Akriti.jpg';
-
+import '../App.css';
 const useStyles = makeStyles(theme => ({
     '@global': {
         ul: {

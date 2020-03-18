@@ -8,7 +8,7 @@ import Box from '@material-ui/core/Box';
 import fb from "../assets/fb.png";
 import ig from "../assets/ig.png";
 import selu from "../assets/slu.png";
-
+import '../App.css';
 function Copyright() {
     return (
         <Typography variant="body2" style={{ color: 'grey' }}>
