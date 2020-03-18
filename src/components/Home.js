@@ -26,7 +26,8 @@ const useStyles = makeStyles(theme => ({
         fontSize: '30px'
     },
     margin: {
-        margin: '40px'
+        margin: '40px',
+        padding: '40px'
     },
     icon: {
         display: 'flex',
@@ -55,7 +56,7 @@ function Home() {
             <Container maxWidth="lg">
                 <Grid container spacing={3}>
                     <Grid item xs={12}>
-                        <Typography className={classes.paper}>
+                        <Typography >
                             <div>
                                 <li>
                                     Women in Technology is founded by Kristen Reeves and Sara Moore in
@@ -82,34 +83,28 @@ function Home() {
                         </Typography>
                     </Grid>
                     <Grid item xs={12}>
-                        <Typography className={classes.paper}>
-                            <div>
-                                <a href="https://www.google.com/maps/dir/30.5135616,-90.4790016/selu+location/@30.5163838,-90.4783979,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x862722985b04e61d:0xd65f00282c35660!2m2!1d-90.4688572!2d30.5173159" className={classes.link}>
-                                    <LocationOnIcon className={classes.icon} style={{ fontSize: '40px' }} />
-                                </a>
-                                <p>Southeastern Louisiana University,</p>
-                                <p>500 W University Ave, Hammond, LA 70402</p>
-                            </div>
-                            <div>
-                                <a href="mailto:slu_wit@southeastern.edu" className={classes.link}>
-                                    <EmailIcon className={classes.icon} style={{ fontSize: '40px' }} />
-                                </a>
-                            </div>
+                        <Typography align="center">
+                            <a href="https://www.google.com/maps/dir/30.5135616,-90.4790016/selu+location/@30.5163838,-90.4783979,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x862722985b04e61d:0xd65f00282c35660!2m2!1d-90.4688572!2d30.5173159" className={classes.link}>
+                             <LocationOnIcon style={{ fontSize: '40px' }} />
+                            </a>
+                            <p>Southeastern Louisiana University,</p>
+                            <p>500 W University Ave, Hammond, LA 70402</p>
+                            <a href="mailto:slu_wit@southeastern.edu" className={classes.link}>
+                                <EmailIcon style={{ fontSize: '40px', textAlign: 'center', justifyContent: 'center' }} />
+                            </a>
                             <p> slu_wit@southeastern.edu</p>
                         </Typography>
                     </Grid>
 
-                    <div>
-                        <div className={classes.margin}>
-                            <hr />
-                            <div align="center" className={classes.quote}>
+
+                    <Typography className={classes.margin} align="center">
+                        <hr />
                                 “There is no tool for development more effective than the
                                 empowerment of women. ”
-                            </div>
                             <div align="center">— KOFI ANNAN</div>
-                            <hr />
-                        </div>
-                    </div>
+                        <hr />
+                    </Typography>
+
                 </Grid>
             </Container>
 
