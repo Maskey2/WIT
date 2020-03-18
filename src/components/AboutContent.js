@@ -24,10 +24,10 @@ const contents = [
         subtitle: 'Guest Speaker: Ms Elle Overholt',
         image: require('../assets/About/3.jpg'),
         description: [
-            'Q&A Session with Dr Theresa Beaubouef. Most discussions were related to women in STEM',
+            'Q&A Session with Dr Theresa Beaubouef',
             'Speech by Mr Cary Riche, Instructor of NorthShore Technical Community College',
             'Sandwiches, fruit trays and drinks were provided',
-            'Winner Announcement of Poster Design Competition',
+
         ],
     },
     {
@@ -35,8 +35,8 @@ const contents = [
         subtitle: '',
         image: require('../assets/About/4.jpg'),
         description: [
-            'First place: $100, Second place: $75, Third place: $50',
-            'Theme for Design: Women in Technology',
+            'First place: $100, Second: $75, Third: $50',
+            'Theme: Women in Technology, 1st: $100, 2nd: $75, 3rd: $50',
             'The poster design was printed, and the winner was be announced in the general meeting',
             'Winners presented 2-5 minutes about their ideas, motivation, their design procedure and steps followed till the final draft',
         ],

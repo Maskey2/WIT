@@ -44,7 +44,7 @@ const contents = [
         ],
     },
     {
-        title: 'Dr Lisa Kuhn',
+        title: 'Faculty Advisor - Dr Lisa Kuhn',
         subtitle: 'Faculty Advisor',
         image: require('../assets/Board/DrLisa.jpg'),
         description: [
@@ -52,7 +52,7 @@ const contents = [
         ],
     },
     {
-        title: 'Ms Allanagh Sewel',
+        title: 'Faculty Advisor - Ms Allanagh Sewel',
         subtitle: 'Faculty Advisor',
         image: require('../assets/Board/MsAllanagh.jpg'),
         description: [

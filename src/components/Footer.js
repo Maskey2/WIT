@@ -11,9 +11,9 @@ import selu from "../assets/slu.png";
 
 function Copyright() {
     return (
-        <Typography variant="body2" color="textSecondary">
+        <Typography variant="body2" style={{ color: 'grey' }}>
             {'Copyright © '}
-            <Link color="inherit" href="https://material-ui.com/">
+            <Link href="http://nishmaskey.com.np/" style={{ color: 'grey' }}>
                 Nishma Maskey
       </Link>{' '}
             {new Date().getFullYear()}
@@ -23,7 +23,7 @@ function Copyright() {
 }
 const useStyles = makeStyles(theme => ({
     footer: {
-        backgroundColor: theme.palette.background.paper,
+        backgroundColor: '#33363a',
         padding: theme.spacing(6),
     },
     center: {
@@ -53,7 +53,7 @@ export default function Footer() {
                         <div>
                             <img src={selu} className={classes.selu} alt="logo" />
                         </div>
-                        <p><b>Follow us in Social Media to stay connected</b></p>
+                        <p style={{ color: 'grey' }}><b>Follow us in Social Media to stay connected</b></p>
 
                         <a href="https://www.facebook.com/SeluWit/">
                             <img src={fb} className={classes.res} alt="logo" />

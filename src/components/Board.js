@@ -93,7 +93,7 @@ export default function Album() {
                                         subtitle={content.position}
                                     />
                                     <CardContent className={classes.cardContent}>
-                                        <Typography gutterBottom variant="h5" component="h2">
+                                        <Typography gutterBottom variant="h5" component="h2" align='center'>
                                             {content.title}
                                         </Typography>
                                         <ul>

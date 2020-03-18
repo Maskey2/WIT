@@ -37,7 +37,8 @@ const useStyles = makeStyles(theme => ({
         paddingBottom: theme.spacing(8),
     },
     card: {
-        height: '100%',
+        height: '95%',
+
         display: 'flex',
         flexDirection: 'column',
     },
@@ -93,7 +94,7 @@ export default function Album() {
                                         subtitle={content.subtitle}
                                     />
                                     <CardContent className={classes.cardContent}>
-                                        <Typography gutterBottom variant="h5" component="h2">
+                                        <Typography gutterBottom variant="h5" component="h2" align='center'>
                                             {content.title}
                                         </Typography>
                                         <ul>
