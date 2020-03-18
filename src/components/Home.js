@@ -16,10 +16,10 @@ import '../App.css';
 import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
-   link: {
-            textDecoration: 'none',
-            color: 'black',
-        },
+    link: {
+        textDecoration: 'none',
+        color: 'black',
+    },
     quote: {
         padding: '30px',
         margin: '40px',
@@ -54,7 +54,7 @@ function Home() {
 
             <Container maxWidth="lg">
                 <Grid container spacing={3}>
-                    <Grid item xs={6}>
+                    <Grid item xs={12}>
                         <Typography className={classes.paper}>
                             <div>
                                 <li>
@@ -81,19 +81,19 @@ function Home() {
                             </div>
                         </Typography>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={12}>
                         <Typography className={classes.paper}>
                             <div>
-                            <a href="https://www.google.com/maps/dir/30.5135616,-90.4790016/selu+location/@30.5163838,-90.4783979,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x862722985b04e61d:0xd65f00282c35660!2m2!1d-90.4688572!2d30.5173159" className={classes.link}>
-                                <LocationOnIcon className={classes.icon} style={{ fontSize: '40px' }} />
-                                            </a>
+                                <a href="https://www.google.com/maps/dir/30.5135616,-90.4790016/selu+location/@30.5163838,-90.4783979,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x862722985b04e61d:0xd65f00282c35660!2m2!1d-90.4688572!2d30.5173159" className={classes.link}>
+                                    <LocationOnIcon className={classes.icon} style={{ fontSize: '40px' }} />
+                                </a>
                                 <p>Southeastern Louisiana University,</p>
                                 <p>500 W University Ave, Hammond, LA 70402</p>
                             </div>
                             <div>
-                            <a href="mailto:slu_wit@southeastern.edu" className={classes.link}>
-                                <EmailIcon className={classes.icon} style={{ fontSize: '40px' }} />
-                                            </a>
+                                <a href="mailto:slu_wit@southeastern.edu" className={classes.link}>
+                                    <EmailIcon className={classes.icon} style={{ fontSize: '40px' }} />
+                                </a>
                             </div>
                             <p> slu_wit@southeastern.edu</p>
                         </Typography>
