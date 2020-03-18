@@ -24,13 +24,17 @@ const useStyles = makeStyles(theme => ({
         color: 'black',
     },
     quote: {
-        padding: '40px',
-        margin: '30px',
-        fontSize: '25px',
+        paddingTop: '40px',
+        paddingBottom: '40px',
+        marginTop: '30px',
+        marginBottom: '30px',
+        fontSize: '30px',
     },
     margin: {
-        margin: '30px',
-        padding: '30px'
+        marginTop: '30px',
+        marginBottom: '30px',
+        paddingTop: '30px',
+        paddingBottom: '40px',
     },
     icon: {
         display: 'flex',
@@ -58,7 +62,7 @@ function Home() {
 
             <Container maxWidth="lg">
                 <Grid container spacing={3}>
-                    <Grid item xs={12}>
+                    <Grid item xs={12} md={6} lg={6}>
                         <Typography >
                             <div>
                                 <li>
@@ -85,7 +89,7 @@ function Home() {
                             </div>
                         </Typography>
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid item xs={12} md={6} lg={6}>
                         <Typography align="center" >
                             <a href="https://www.google.com/maps/dir/30.5135616,-90.4790016/selu+location/@30.5163838,-90.4783979,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x862722985b04e61d:0xd65f00282c35660!2m2!1d-90.4688572!2d30.5173159" className={classes.link}>
                                 <LocationOnIcon style={{ fontSize: '40px' }} />
@@ -99,15 +103,16 @@ function Home() {
                         </Typography>
                     </Grid>
                 </Grid>
-
-                <Typography className={classes.margin} align="center" >
-                    <hr />
-                    <Typography className={classes.quote} >
-                        “There is no tool for development more effective than the
+                <Container maxWidth="md">
+                    <Typography className={classes.margin} align="center" >
+                        <hr />
+                        <Typography className={classes.quote} >
+                            “There is no tool for development more effective than the
                                 empowerment of women. ”</Typography>
-                    <Typography align="center">— KOFI ANNAN</Typography>
-                    <hr />
-                </Typography>
+                        <Typography align="center">— KOFI ANNAN</Typography>
+                        <hr />
+                    </Typography>
+                </Container>
 
             </Container>
 

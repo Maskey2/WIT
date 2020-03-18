@@ -25,7 +25,7 @@ const styleSheet = {
     },
     reslogo:
     {
-        height: '50px',
+        height: '60px',
         margin: 5
     },
     logo:
@@ -114,19 +114,19 @@ class ResAppBar extends Component {
                         onKeyDown={() => { this.setState({ drawer: false }) }}>
                         <List className={this.props.classes.list}>
                             <ListItem key={1} button divider>
-                                <Link to="/contact" className={this.props.classes.reslink}>Contact Us</Link></ListItem>
+                                <Link to="/" className={this.props.classes.reslink}>Home</Link> </ListItem>
                             <ListItem key={2} button divider>
-                                <Link to="/alumni" className={this.props.classes.reslink}>Alumni</Link> </ListItem>
-                            <ListItem key={3} button divider>
-                                <Link to="/discussion" className={this.props.classes.reslink}>Discussion</Link> </ListItem>
-                            <ListItem key={3} button divider>
-                                <Link to="/gallery" className={this.props.classes.reslink}>Gallery</Link> </ListItem>
-                            <ListItem key={3} button divider>
-                                <Link to="/board" className={this.props.classes.reslink}>Board</Link> </ListItem>
-                            <ListItem key={3} button divider>
                                 <Link to="/about" className={this.props.classes.reslink}>About</Link> </ListItem>
                             <ListItem key={3} button divider>
-                                <Link to="/" className={this.props.classes.reslink}>Home</Link> </ListItem>
+                                <Link to="/board" className={this.props.classes.reslink}>Board</Link> </ListItem>
+                            <ListItem key={4} button divider>
+                                <Link to="/gallery" className={this.props.classes.reslink}>Gallery</Link> </ListItem>
+                            <ListItem key={5} button divider>
+                                <Link to="/discussion" className={this.props.classes.reslink}>Discussion</Link> </ListItem>
+                            <ListItem key={6} button divider>
+                                <Link to="/alumni" className={this.props.classes.reslink}>Alumni</Link> </ListItem>
+                            <ListItem key={7} button divider>
+                                <Link to="/contact" className={this.props.classes.reslink}>Contact</Link></ListItem>
                         </List>
                     </div>
                 </SwipeableDrawer>
@@ -154,19 +154,19 @@ class ResAppBar extends Component {
                             WIT
                         </Typography>
                         <Typography variant="subheading" className={classes.padding} color="inherit" >
-                            <Link to="/contact" className={classes.link}>Contact Us</Link></Typography>
-                        <Typography variant="subheading" className={classes.padding} color="inherit" >
-                            <Link to="/alumni" className={classes.link}>Alumni</Link></Typography>
-                        <Typography variant="subheading" className={classes.padding} color="inherit" >
-                            <Link to="/discussion" className={classes.link}>Discussion</Link></Typography>
-                        <Typography variant="subheading" className={classes.padding} color="inherit" >
-                            <Link to="/gallery" className={classes.link}>Gallery</Link></Typography>
-                        <Typography variant="subheading" className={classes.padding} color="inherit" >
-                            <Link to="/board" className={classes.link}>Board</Link></Typography>
+                            <Link to="/" className={classes.link}>Home</Link></Typography>
                         <Typography variant="subheading" className={classes.padding} color="inherit" >
                             <Link to="/about" className={classes.link}>About</Link></Typography>
                         <Typography variant="subheading" className={classes.padding} color="inherit" >
-                            <Link to="/" className={classes.link}>Home</Link></Typography>
+                            <Link to="/board" className={classes.link}>Board</Link></Typography>
+                        <Typography variant="subheading" className={classes.padding} color="inherit" >
+                            <Link to="/gallery" className={classes.link}>Gallery</Link></Typography>
+                        <Typography variant="subheading" className={classes.padding} color="inherit" >
+                            <Link to="/discussion" className={classes.link}>Discussion</Link></Typography>
+                        <Typography variant="subheading" className={classes.padding} color="inherit" >
+                            <Link to="/alumni" className={classes.link}>Alumni</Link></Typography>
+                        <Typography variant="subheading" className={classes.padding} color="inherit" >
+                            <Link to="/contact" className={classes.link}>Contact</Link></Typography>
                     </Toolbar>
                 </AppBar>
             </div>
