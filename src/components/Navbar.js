@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import logo from '../assets/logo.png'
 import '../App.css';
+
 const styleSheet = {
     list: {
         width: 200,
@@ -148,10 +149,10 @@ class ResAppBar extends Component {
                         <div className={classes.subheading}>LEARN. BELIEVE. CHANGE. GROW.</div>
                     </div>
                 </div>
-                <AppBar className={classes.color} position="static">
+                <AppBar className={classes.color} position="sticky">
                     <Toolbar>
                         <Typography variant="headline" style={{ flexGrow: 1 }} color="inherit" >
-                            WIT
+
                         </Typography>
                         <Typography variant="subheading" className={classes.padding} color="inherit" >
                             <Link to="/" className={classes.link}>Home</Link></Typography>

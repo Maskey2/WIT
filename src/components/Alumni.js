@@ -3,8 +3,6 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Navbar from './Navbar';
-import Footer from './Footer';
 import Alum from '../assets/Alumni.jpg'
 import { Grid } from '@material-ui/core';
 import '../App.css';
@@ -13,8 +11,6 @@ export default function Alumni() {
 
     return (
         <React.Fragment>
-            <CssBaseline />
-            <Navbar />
             <main>
                 <div>
                     <Container maxWidth="md">
@@ -29,7 +25,6 @@ export default function Alumni() {
                     </Container>
                 </div>
             </main>
-            <Footer />
         </React.Fragment >
 
     )

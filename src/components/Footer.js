@@ -9,6 +9,7 @@ import fb from "../assets/fb.png";
 import ig from "../assets/ig.png";
 import selu from "../assets/slu.png";
 import '../App.css';
+
 function Copyright() {
     return (
         <Typography variant="body2" style={{ color: 'grey' }}>
@@ -62,8 +63,6 @@ export default function Footer() {
                         <a href="https://www.instagram.com/wit.selu/">
                             <img src={ig} className={classes.res} alt="logo" />
                         </a>
-
-
                     </div>
                 </Typography>
                 <Box mt={5} className={classes.center}>

@@ -9,8 +9,6 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Navbar from './Navbar';
-import Footer from './Footer';
 import Sneha from '../assets/Sneha.jpg';
 import '../App.css';
 const useStyles = makeStyles(theme => ({
@@ -46,8 +44,6 @@ export default function Album() {
     const classes = useStyles();
     return (
         <React.Fragment>
-            <CssBaseline />
-            <Navbar />
             <main>
                 <div>
                     <Container maxWidth="lg">
@@ -105,7 +101,6 @@ export default function Album() {
                     <hr /><hr />
                 </Container>
             </main>
-            <Footer />
         </React.Fragment>
     );
 }

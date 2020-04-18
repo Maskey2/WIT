@@ -9,8 +9,6 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Navbar from './Navbar';
-import Footer from './Footer';
 import contents from './GalleryContent'
 import contentss from './GalleryContent2'
 import p1 from '../assets/Gallery/Saugat.jpg';
@@ -18,6 +16,7 @@ import p2 from '../assets/Gallery/avash.jpg';
 import p3 from '../assets/Gallery/Bibesh.png';
 import p4 from '../assets/Gallery/Akriti.jpg';
 import '../App.css';
+
 const useStyles = makeStyles(theme => ({
     '@global': {
         ul: {
@@ -66,8 +65,6 @@ export default function Album() {
 
     return (
         <React.Fragment>
-            <CssBaseline />
-            <Navbar />
             <main>
                 {/* Hero unit */}
                 <div className={classes.heroContent}>
@@ -123,7 +120,6 @@ export default function Album() {
                     </Grid>
                 </Container>
             </main>
-            <Footer />
         </React.Fragment>
     );
 }

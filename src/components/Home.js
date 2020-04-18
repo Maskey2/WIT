@@ -1,6 +1,4 @@
 import React from 'react';
-import Navbar from './Navbar';
-import Footer from './Footer';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import Header2 from '../assets/header2.jpg'
@@ -11,10 +9,9 @@ import EmailIcon from '@material-ui/icons/Email';
 import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
 import '../App.css';
 import { Typography } from '@material-ui/core';
-
+import Corona from './Corona';
 
 
 
@@ -46,7 +43,7 @@ function Home() {
     const classes = useStyles();
     return (
         <div>
-            <Navbar />
+            <Corona />
             <Carousel autoPlay transitionTime={1000} interval={4000} infiniteLoop >
                 <div>
                     <img src={Header2} alt="" />
@@ -113,11 +110,7 @@ function Home() {
                         <hr />
                     </Typography>
                 </Container>
-
             </Container>
-
-
-            <Footer />
         </div >
     );
 }

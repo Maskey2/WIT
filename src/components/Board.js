@@ -10,10 +10,9 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
-import Navbar from './Navbar';
-import Footer from './Footer';
 import contents from './BoardContent'
 import '../App.css';
+
 const useStyles = makeStyles(theme => ({
     '@global': {
         ul: {
@@ -59,8 +58,6 @@ export default function Album() {
 
     return (
         <React.Fragment>
-            <CssBaseline />
-            <Navbar />
             <main>
                 {/* Hero unit */}
                 <div className={classes.heroContent}>
@@ -112,7 +109,6 @@ export default function Album() {
                     </Grid>
                 </Container>
             </main>
-            <Footer />
         </React.Fragment>
     );
 }
