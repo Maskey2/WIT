@@ -42,8 +42,7 @@ const useStyles = makeStyles(theme => ({
 function Home() {
     const classes = useStyles();
     return (
-        <div>
-            <Corona />
+        <div>            
             <Carousel autoPlay transitionTime={1000} interval={4000} infiniteLoop >
                 <div>
                     <img src={Header2} alt="" />
